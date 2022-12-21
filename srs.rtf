@@ -1,0 +1,94 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil Calibri;}{\f2\fnil\fcharset2 Symbol;}}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\ul\b\f0\fs46\lang9 Software Requirement Specification for Cab Booking a App\ulnone\par
+\fs30 INDTRODUCTION\par
+\b0 Transportation is essential to our social lives. Today's society cannot function without the infrastructure necessary for transportation. There are several companies that offer transportation services to both ordinary citizens and commercial entities. Under the current arrangement, the client must first contact the transport company in order to receive a transportation service. Once the car is reserved for him for the designated day and time, it is subsequently delivered to his address at that specific time. By automating the cab management, both the customer and the company can save time and effort. At first, the company will register both its own vehicles and the automobiles on the system. The customer will then submit a booking request for a car at the selected time and date, including all pertinent information. The client needs to confirm the calculated fare. At the appointed time and day, the employee will next provide the client with service. Finally, the client will have an opportunity to offer feedback on the service he received. The company can review it and take the necessary actions to advance in the future.\par
+\b PURPOSE\par
+\b0 The purpose of this SRS document is to specify software requirements of the Cab Booking App.The system's main objective is to automate the  cab management procedure. It is intended to be a complete specification of what functionality the system provides.\par
+\ul\b Users\b0\par
+\ulnone 1.customer\par
+2.Driver\par
+3.Administrator\par
+\par
+\ul\b\fs32 1.Customer interface\ulnone\b0\fs28\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b customer can register\b0\par
+
+\pard\sa200\sl276\slmult1 . The customer should enter their full name,email id,password,phone number and submit button. The name should  only contain letters. The mail id should be unique and meets the standards.Password must contain more than 7 letters. it also contains atleast one uppercase,lowercase,special character and number. The phone number must contain 10 digits and it must not be other than digits. \par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b customer signin using email and password or using phone number,signin button\b0\par
+
+\pard\sa200\sl276\slmult1 The customer should enter the existing and valid email id and password to signin. In failed cases display a "invalid data" message.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1  \b customer can check and book available vehicles\par
+
+\pard\sa200\sl276\slmult1\b0 Search bar,cab preference,destinations--->From and To,search button,seat availability\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b driver details \b0\par
+
+\pard\sa200\sl276\slmult1 customer can see the driver details such as driver name,licence details,driver image etc.\b\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1 payment page\par
+
+\pard\sa200\sl276\slmult1\b0 customer can see the payment options such as debit card,credit card,net banking etc.After selecting the option it should redirected to payment gateway.After successful completion of payment an invoice is generated, and customer can download invoice in which format the want.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b Live tracking \par
+
+\pard\sa200\sl276\slmult1\b0 the customer can track the live location of vehicle and see the expected time of arrival.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1  \b Customer service\b0\par
+
+\pard\sa200\sl276\slmult1 The user must have options to connect with the customer services. The contact information and email information of the admin need to be provided. While clicking the contact number\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1  \b Rate the trip\b0\par
+
+\pard\sa200\sl276\slmult1 The user must be able to rate the trip and add a feedback about the ride. The ratings are rated by five stars and comment box holds a minimum of 1 word to maximum 30.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b logout\par
+
+\pard\sa200\sl276\slmult1\b0 customer can logout from home page.\par
+\ul\b\fs32\par
+2.Driver interface\ulnone\b0\fs28\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b driver registration\par
+
+\pard\sa200\sl276\slmult1\b0 The driver should enter their full name,email id,password,phone number and submit button. The name should  only contain letters. The mail id should be unique and meets the standards.Password must contain more than 7 letters. it also contains atleast one uppercase,lowercase,special character and number. The phone number must contain 10 digits and it must not be other than digits. drivre should enter his licence details,photo,Address,identity details, bank account details\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b driver signin using email and password or using phone number,signin button\b0\par
+
+\pard\sa200\sl276\slmult1 The driver should enter the existing and valid email id and password to signin. In failed cases display a "invalid data" message.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b driver online \par
+
+\pard\sa200\sl276\slmult1\b0 driver can turn on a button showing that he is online and ready for work. If the customer sent request to the nearest cab driver the driver can accept the request if he is ready.After completion of each ride driver can press a \b done \b0 button to end the journey.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1  \b driver service\b0\par
+
+\pard\sa200\sl276\slmult1 The user must have options to connect with the customer services. The contact information and email information of the admin need to be provided.\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b driver payments\par
+
+\pard\sa200\sl276\slmult1\b0 driver can review all his earnings and withdrawal\par
+
+\pard{\pntext\f2\'B7\tab}{\*\pn\pnlvlblt\pnf2\pnindent0{\pntxtb\'B7}}\fi-360\li720\sa200\sl276\slmult1\b driver logout\par
+
+\pard\sa200\sl276\slmult1\b0 driver can logout from application.\par
+3,\par
+\b\fs32 Admin\par
+\b0 Admin have  an initial  login  id  and  password  provided  by  the  development  team  by which  he  can log  in.  After  the  first  login,  the  admin  should be asked  to register himself with a new mail id and password.\par
+\i Email\i0 : should be with a company domain,minimum 10 characters\par
+\i Password\i0 : should contain a minimum of 8 characters,1 special character is a must but not in the beginning,should contain numbers.\par
+A Confirm  password option  should  be  there  where the  admin  has  to enter   the   earlier   entered   password   and   should   show   a   warning message if both of them do meet the same.\par
+Admin should be able to;\par
+\f1\bullet View all the bookings including the previous, current, and pending bookings.\par
+\bullet View the performance table of drivers which is to be sorted based on the ratings given by customers. \par
+\bullet allow or block a driver based on document verification.\par
+\bullet The  admin  page  should  include a  search  bar  with  a filter  that  will show the following:\par
+\bullet a separate list of premium customers ;\par
+a\f0\lang16393  \f1\lang9 premium  customers   are   those   who   are   frequent   users, long-distance travelers.\f0\lang16393  T\f1\lang9 he criteria for premium classification can be set by admin such as all those who have more than 50 bookings\f0\lang16393 . \f1\lang9 This sorted data should be visible to the admin\f0\lang16393 . \f1\lang9 All  premium  customers  will be  given  special  discounts  of  up  to 15%\f0\lang16393 . \f1\lang9 This will be changeable\f0\lang16393  \f1\lang9 by the admin\par
+\bullet Similarly, top-rated cabs also have to be shown.\f0\lang16393  \f1\lang9 These   results   should   be   based   on  the   ratings   given   by customers.\f0\lang16393  \f1\lang9 top  rated  drivers  should  be  shown  first  when  a  customer search for cabs\f0\lang16393 .\fs28\lang9\par
+
+\pard\sa200\sl276\slmult1\par
+\fs22\par
+}
+ 
